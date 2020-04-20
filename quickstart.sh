@@ -1,11 +1,13 @@
 cd 
 
+goober=$1
+
 cd ~/Firebase-Database-Demo
 if [ "$#" -ne 1 ]; then
     echo "oops, try adding the firebase config file as a parameter"
 fi
 
-printf "'/GOOBER/{r $1' -e 'd}' demo.html" | xargs sed -i
+printf "'/GOOBER/{r $goober' -e 'd}' demo.html" | xargs sed -e > demo.html
 
 
 firefox demo.html
