@@ -1,6 +1,7 @@
 # Firebase-Database-Demo
 The basics to using Google's Firebase realtime-database for an html
 
+<img src=demo.gif>
 
 # Getting Started
 1. Make a Firebase conifiguration file, Follow the Firebase setup
