@@ -18,3 +18,7 @@ cd ~/Firebase-Database-Demo
 ```
 bash quickstart.sh FILEPATH_to_CONFIG
 ```
+#References
+- https://stackoverflow.com/questions/38541098/how-to-retrieve-data-from-firebase-database  
+- https://firebase.google.com/docs/web/setup
+- https://stackoverflow.com/questions/59935499/does-the-firebase-web-sdk-need-to-be-in-every-html-file-i-use
