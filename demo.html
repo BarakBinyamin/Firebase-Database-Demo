@@ -110,7 +110,8 @@ Let's test out the database!
 <!--Clear the textboxes on loading the page -->
 <script> 
 clear_textbox();
-reload_content();
+//reload the content on the page, sequential function call to reload
+setTimeout(function(){ reload_content();setTimeout(function(){ reload_content(); }, 250) }, 250)
 </script>
 
 </div>
