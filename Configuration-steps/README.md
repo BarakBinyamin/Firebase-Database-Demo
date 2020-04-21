@@ -64,5 +64,4 @@
 <img src=27.png> 
 30.
 <img src=28.3.png>  
-32.
-<img src=28.png>   
+
