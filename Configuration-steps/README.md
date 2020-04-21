@@ -2,8 +2,8 @@
 
 <img src=Configuration.gif>  
 
-## steps by image
-  
+## 28 steps by image
+
 1.
 <img src=1.png>  
 2.
