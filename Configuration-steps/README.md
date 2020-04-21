@@ -1,6 +1,6 @@
 # Configuration steps
 
-<img src=configuration.gif>  
+<img src=Configuration.gif>  
 
 ## steps by image
   
