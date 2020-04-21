@@ -4,7 +4,7 @@ The basics to using Google's Firebase realtime-database for an html
 <img src=demo.gif>
 
 # Getting Started
-1. Make a Firebase conifiguration file, Follow the Firebase setup
+1. Make a Firebase conifiguration file, Follow the [Firebase setup](Configuration-steps/README.md)
 2. Clone the repo, move into the demo directory
 
 ```
