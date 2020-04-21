@@ -53,15 +53,11 @@
 24.
 <img src=22.png>  
 25.
-<img src=23.png>  
+<img src=23.png>   
 26.
-<img src=24.png>  
-27.
-<img src=25.png>  
-28.
 <img src=26.png>
-29.
+27.
 <img src=27.png> 
-30.
+28.
 <img src=28.3.png>  
 
