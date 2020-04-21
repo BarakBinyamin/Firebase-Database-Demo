@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title>Database Demo</title>
+</head>
+
+
+<!-- start CSS for a card in html-->
+<style>
+.card {
+  width: responsive; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+</style>
+<!-- end CSS for a card in html-->
+
+
+<body>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyCMsLRlf1uV4eUqukK5AuNdKfFoqY_WWYI",
+    authDomain: "database-fa159.firebaseapp.com",
+    databaseURL: "https://database-fa159.firebaseio.com",
+    projectId: "database-fa159",
+    storageBucket: "database-fa159.appspot.com",
+    messagingSenderId: "704838907122",
+    appId: "1:704838907122:web:ca2d151239daf417cecc6b"
+  };
+
+  // Initialize Firebase, make a reference variable 
+  firebase.initializeApp(firebaseConfig);
+  var database = firebase.database();
+
+//sets the folder "User" with no data - functionally clearing any data
+function clearData(){
+database.ref("User").set({
+         });
+}
+
+//reloads the content of the page, this is done by looping over all of the elements with the keys "name" & 
+//"content" within the folder "User" 
+function reload_content(){
+var today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var page = "";
+
+/**these two lines of javascript are key to iterating through the database**/
+firebase.database().ref("User").on('value', function(snap){
+   snap.forEach(function(childNodes){
+
+      //This loop iterates over children of user_id
+      //childNodes.key is key of the children of userid such as (20170710)
+      name = childNodes.val().name;
+      content = childNodes.val().content;
+
+      //add the data into your preset html wrapper, be sure to escape special characters
+      page += "<div class=\"card\">\r\n  <div class=\"container\" style=\"background: rgba(255, 255, 255, .5);\">\r\n   <p style=\"\"font-weight: 800;\"\">" + String(name) + "<\/p>\r\n      <p style=\"text-align: left; font-size: 20px; \"font-weight: 400;\"> message: " + String(content) + "<\/p>\r\n <p style=\"text-align: left; font-size: 20px; \"font-weight: 400;\"> date added: " +  String(date) +  "<\/p>\r\n <\/div><\/div><\/div><\/div>";
+
+
+  });		//don't forget these!! 
+});
+
+document.getElementById("data").innerHTML = page  //set the element with the refernce "page" with the html that was just made
+}
+
+//add a grouping of data to the database
+function push(){
+database.ref("User").push({
+             content: document.getElementById("textfeild").value,
+	     name: document.getElementById("nameTextbox").value
+         });
+
+}
+
+//clear the textboxes
+function clear_textbox(){
+document.getElementById("textfeild").value = ""
+document.getElementById("nameTextbox").value = ""
+}
+
+</script>
+
+
+<!--static html-->
+<h1>Firebase Realtime Database Demo</h1>
+<div style="height:1000px;font-size:36px;background: rgb(204, 204, 204); 
+  background: rgba(204, 204, 204, 0); text-align:center;">
+Let's test out the database! <br/>Feel free to reload the page and use the get_all button
+<br/><br/><br/>
+
+
+<p id= "data">loading...</p>	<!--dynamic html goes here-->
+
+<!--static html-->
+<input type="text" id="nameTextbox" placeholder = "name" style="font-size: 15px;"><br/>
+<textarea name="paragraph_text" cols="40" placeholder = "Comments" rows="5" id="textfeild" style="background: rgba(204, 204, 204, .1); color:#000000; border:rgba(204, 204, 204, .8); font-size: 15px;  "></textarea>
+<button onclick = "push(), reload_content(), clear_textbox()" style="font-size: 20px;">Submit</button>
+<button onclick = "reload_content() "style="font-size: 20px;" >get_all</button>
+<button onclick = "clearData(), reload_content(), clear_textbox(); " style="font-size: 20px;">Clear</button>
+
+<!--Clear the textboxes on loading the page -->
+<script> 
+clear_textbox();
+reload_content();
+</script>
+
+</div>
+</body>
+</html>
+
