@@ -72,7 +72,7 @@ firebase.database().ref("User").on('value', function(snap){
 document.getElementById("data").innerHTML = page  //set the element with the refernce "page" with the html that was just made
 }
 
-//add a grouping of data to the database
+//add a grouping of data to the database under "User"
 function push(){
 database.ref("User").push({
              content: document.getElementById("textfeild").value,
