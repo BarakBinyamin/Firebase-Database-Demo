@@ -38,26 +38,26 @@
 <img src=14.3.png>  
 17. Go to options  
 <img src=15.png>  
-18.
+18. Select Database  
 <img src=16.png>  
-19.
+19. Create database   
 <img src=17.png>  
-20.
+20. Start in test mode  
 <img src=18.png>  
-21.
+21. Next  
 <img src=19.png>  
-22.
+22. Done  
 <img src=20.png>  
-23.
+23. Load  
 <img src=21.png>  
-24.
+24. Select Cloud Firestore  
 <img src=22.png>  
-25.
+25. Select Realtime Database  
 <img src=23.png>   
-26.
+26. Go to Rules, change the permissions to true  
 <img src=26.png>
-27.
+27. Enter  
 <img src=27.png> 
-28.
+28. Configuration complete!
 <img src=28.3.png>  
 
