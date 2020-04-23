@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Database Demo</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <!-- ORDER MATTERS-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+    <script src="myscript.js"></script>
+</head>
+
+<body>
+    <h1 id = "h1" >Firebase Realtime Database Demo</h1>
+    <div id="sub">
+    Let's test out the image database!
+    <br/>
+    Feel free to reload the page and use the clear button
+    <br/><br/><br/>
+    <p id= "data">loading...</p> <!-- This is changed by javascript -->
+    <div id="link">
+    </div>
+        <br/>
+        <input id="myinput" type="file" onchange="encode(), reload_content(),setTimeout(function(){ reload_content();setTimeout(function(){ reload_content(); goto();}, 1000);}, 1000)" data-buttonText="Your label here."/>
+        <button onclick = "clearData(), reload_content()" style="font-size: 20px;">Clear</button>
+        <br/>
+	<br/>
+	<br/>
+	<br/>
+    </div>
+</body>
+</html>

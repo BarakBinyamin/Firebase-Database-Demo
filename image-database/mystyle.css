@@ -1,0 +1,16 @@
+.card {
+    width: responsive; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.container {
+    padding: 2px 16px;
+}
+#sub {
+    height: 1000px;
+    font-size: 36px;
+    background: rgb(204, 204, 204); 
+    background: rgba(204, 204, 204, 0);
+    text-align: center;
+}
