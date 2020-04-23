@@ -5,7 +5,7 @@ cd
 goober=$1
 
 #navigate the demo directory
-cd ~/Firebase-Database-Demo
+cd Firebase-Database-Demo
 
 #Check number of args
 if [ "$#" -ne 1 ]; then
