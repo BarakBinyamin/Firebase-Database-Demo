@@ -9,7 +9,7 @@ cd Firebase-Database-Demo
 
 #check number of args
 if [ "$#" -ne 1 ]; then
-    echo "oops, try adding the firebase config file as a parameter"
+    echo "oops, try adding the path to the firebase config file as a parameter"
 fi
 
 #replace the word "GOOBER" in demo.html with the custom configuration 
