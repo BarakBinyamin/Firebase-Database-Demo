@@ -1,5 +1,5 @@
 # Firebase-Database-Demo
-The basics to using Google's Firebase realtime-database for a webapp, [check out the demo](https://barakbinyamin.github.io/Firebase-Database-Demo/demo.html)
+The basics to using Google's Firebase realtime-database for a webapp, [check out the live demo](https://barakbinyamin.github.io/Firebase-Database-Demo/demo.html)
 
 <img src=demo.gif>
 
