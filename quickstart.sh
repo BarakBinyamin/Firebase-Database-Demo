@@ -1,7 +1,7 @@
 #navigate the home directory
 cd 
 
-#first arg
+#goober=first arg
 goober=$1
 
 #navigate the demo directory
