@@ -20,7 +20,7 @@ bash quickstart.sh FILEPATH_to_CONFIG
 ```
 
 # Going Further
-The realtime database can be used to store images too, [check out this example](https://BarakBinyamin.github.io/image-database/image_demo.html) or [take a look at the code](https://github.com/BarakBinyamin/Firebase-Database-Demo/tree/master/image-database)
+The realtime database can be used to store images too, [check out this live example](https://BarakBinyamin.github.io/image-database/image_demo.html) or [take a look at the code](https://github.com/BarakBinyamin/Firebase-Database-Demo/tree/master/image-database)
 
 
 
