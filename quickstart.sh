@@ -7,7 +7,7 @@ goober=$1
 #navigate the demo directory
 cd Firebase-Database-Demo
 
-#Check number of args
+#check number of args
 if [ "$#" -ne 1 ]; then
     echo "oops, try adding the firebase config file as a parameter"
 fi
