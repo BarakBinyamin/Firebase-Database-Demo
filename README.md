@@ -14,7 +14,7 @@ git clone https://github.com/BarakBinyamin/Firebase-Database-Demo.git
 cd Firebase-Database-Demo  
 ```
 
-3. Launch the demo by passing the config file as an arguemnt to the quickstart script
+3. Launch the demo in firefox by passing the config file as an arguement to the quickstart script
 ```bash
 bash quickstart.sh FILEPATH_to_CONFIG
 ```
